@@ -132,9 +132,11 @@ classdef Mesh < handle & matlab.mixin.CustomDisplay
                     mesh.fmask_neg = flipud(mesh.fmask);
                     mesh.shape = 'triangle';
                 case 3
-                    mesh.fmask = [2,3,1;1,2,4;2,3,4;3,1,4].';
-                    mesh.fmask_neg = [1,2,3;2,3,1;3,1,2];
-                    mesh.fmask_neg = reshape(mesh.fmask(mesh.fmask_neg,:), 3, []);
+                    mesh.fmask = [3,2,1;1,2,4;2,3,4;3,1,4].';
+                    mesh.fmask_neg = [1,3,2;2,1,3;3,2,1].';
+                    mesh.fmask_neg = [mesh.fmask(mesh.fmask_neg(:,1),:), ...
+                                      mesh.fmask(mesh.fmask_neg(:,2),:), ...
+                                      mesh.fmask(mesh.fmask_neg(:,3),:)];
                     mesh.shape = 'tetrahedron';
             end
             
