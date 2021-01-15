@@ -5,6 +5,8 @@
 4. Automatic generation of Affine information
 
 See `example.mlx` for more information.
+
+__New issues and contributions are welcomed!__
 ## How to use?
 You can create a `Mesh` object by
 ```MATLAB
