@@ -3,6 +3,8 @@
 2. Mesh display function
 3. Automatic facet generation and neighboring information
 4. Automatic generation of Affine information
+
+See `example.mlx` for more information.
 ## How to use?
 You can create a `Mesh` object by
 ```MATLAB
@@ -75,3 +77,4 @@ One can access to the affine information by
     mesh.rx, mesh.ry, mesh.rz
     mesh.sx, mesh.sy, mesh.sz
     mesh.mx, mesh.my, mesh.mz
+```
